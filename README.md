@@ -43,9 +43,10 @@ MovieMania is a Java-based web application (backend) developed using Spring Boot
    ```
 
 3. **Access the application**
-Open your web browser and go to http://localhost:8080 to view MovieMania.
+   
+- Use http://localhost:8080 on PostMan to access MovieMania.
 
 4. **Database Configuration**
 
 - Ensure MySQL is installed and running.
-- Update application.properties with your database credentials and schema details.
+- Update application.properties with your database credentials.
