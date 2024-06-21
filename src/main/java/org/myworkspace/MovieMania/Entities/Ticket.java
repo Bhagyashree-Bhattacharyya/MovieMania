@@ -43,9 +43,10 @@ public class Ticket {
 
     @ManyToOne
     @JsonIgnore
+    @JoinColumn(name = "show_id")
     private Show show;
 
-    @OneToMany(mappedBy = "show", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "ticket", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<ShowSeat> seats;
 
