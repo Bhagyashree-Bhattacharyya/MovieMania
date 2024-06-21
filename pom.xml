@@ -6,8 +6,21 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>3.3.1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- Add other managed dependencies here -->
+		</dependencies>
+	</dependencyManagement>
+
 	<groupId>org.myworkspace</groupId>
 	<artifactId>MovieMania</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
